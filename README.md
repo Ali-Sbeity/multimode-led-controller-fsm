@@ -88,31 +88,6 @@ The system resumes from the last state after power cycle.
 ## Demonstration Video
 
 
-## FSM Diagram
-
-```mermaid
-flowchart LR
-    OFF[OFF State] -->|Power ON| IDLE[IDLE]
-    IDLE -->|Power OFF| OFF
-
-    IDLE -->|Mode Button| SLOW_BLINK[Slow Blink]
-    SLOW_BLINK -->|Mode Button| FAST_BLINK[Fast Blink]
-    FAST_BLINK -->|Mode Button| RUNNING[Running Light]
-    RUNNING -->|Mode Button| PING_PONG[Ping-Pong]
-    PING_PONG -->|Mode Button| BINARY[Binary Counter]
-    BINARY -->|Mode Button| SLOW_BLINK
-
-    %% Reset Logic
-    IDLE -->|Both Buttons Pressed| OFF
-    SLOW_BLINK -->|Both Buttons Pressed| OFF
-    FAST_BLINK -->|Both Buttons Pressed| OFF
-    RUNNING -->|Both Buttons Pressed| OFF
-    PING_PONG -->|Both Buttons Pressed| OFF
-    BINARY -->|Both Buttons Pressed| OFF
-```
-
-
-
 ## Learning Objectives
 
 This project demonstrates:
