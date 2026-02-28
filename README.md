@@ -1,4 +1,10 @@
 # multimode-led-controller-fsm
+
+**Author:** Ali Sbeity
+**Version:** 1.0
+**Copyright:** (c) 2026 Ali Sbeity
+**License:** MIT License
+
 Multi-mode LED controller based on FSM with non-blocking timing, debounce, and EEPROM persistence.
 
 
