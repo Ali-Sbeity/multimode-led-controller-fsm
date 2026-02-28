@@ -90,7 +90,24 @@ The system resumes from the last state after power cycle.
 
 ## FSM Diagram
 
+```mermaid
+flowchart LR
+    OFF --> IDLE
+    IDLE --> SLOW_BLINK
+    SLOW_BLINK --> FAST_BLINK
+    FAST_BLINK --> RUNNING
+    RUNNING --> PING_PONG
+    PING_PONG --> BINARY
+    BINARY --> SLOW_BLINK
 
+    OFF --> IDLE_Reset[Power ON]
+    IDLE --> OFF_Reset[Power OFF]
+    SLOW_BLINK --> OFF
+    FAST_BLINK --> OFF
+    RUNNING --> OFF
+    PING_PONG --> OFF
+    BINARY --> OFF
+```
 
 ## Learning Objectives
 
