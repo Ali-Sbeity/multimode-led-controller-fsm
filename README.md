@@ -92,11 +92,9 @@ The system resumes from the last state after power cycle.
 
 ```mermaid
 flowchart LR
-    %% Power Off / On
     OFF[OFF State] -->|Power ON| IDLE[IDLE]
     IDLE -->|Power OFF| OFF
 
-    %% Mode Cycle
     IDLE -->|Mode Button| SLOW_BLINK[Slow Blink]
     SLOW_BLINK -->|Mode Button| FAST_BLINK[Fast Blink]
     FAST_BLINK -->|Mode Button| RUNNING[Running Light]
@@ -111,12 +109,6 @@ flowchart LR
     RUNNING -->|Both Buttons Pressed| OFF
     PING_PONG -->|Both Buttons Pressed| OFF
     BINARY -->|Both Buttons Pressed| OFF
-
-    %% EEPROM Note
-    note right of IDLE
-        EEPROM updates on state change
-        System resumes last state after power cycle
-    end note
 ```
 
 
