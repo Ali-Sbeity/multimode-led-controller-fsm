@@ -90,30 +90,7 @@ The system resumes from the last state after power cycle.
 
 ## FSM Diagram
 
-```mermaid
-stateDiagram-v2
-    [*] --> OFF
 
-    OFF --> IDLE : Power ON
-    IDLE --> OFF : Power OFF
-
-    IDLE --> SLOW_BLINK : Mode Button
-    SLOW_BLINK --> FAST_BLINK : Mode Button
-    FAST_BLINK --> RUNNING : Mode Button
-    RUNNING --> PING_PONG : Mode Button
-    PING_PONG --> BINARY : Mode Button
-    BINARY --> SLOW_BLINK : Mode Button
-
-    SLOW_BLINK --> OFF : Power OFF
-    FAST_BLINK --> OFF : Power OFF
-    RUNNING --> OFF : Power OFF
-    PING_PONG --> OFF : Power OFF
-    BINARY --> OFF : Power OFF
-
-    note right of IDLE
-        EEPROM Save on State Change
-    end note
-```
 
 ## Learning Objectives
 
