@@ -24,7 +24,8 @@ The system demonstrates fundamental embedded systems concepts including:
 
 ## Demonstration Video
 
-A short demonstration of the system in operation is available here:
+A short demonstration of the system in operation is available here:  
+
 [LinkedIn](https://www.linkedin.com/posts/ali-sbeity-r_robotics-arduino-embeddedsystems-ugcPost-7433604395117834240-Qyxz?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAGUK5TkB6mFIkhRXEggy5uv9bPej4WMnw2c&utm_campaign=copy_link)
 
 [Youtube](
