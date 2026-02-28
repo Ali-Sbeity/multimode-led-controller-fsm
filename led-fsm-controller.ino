@@ -1,3 +1,11 @@
+/*****************************************
+* Project: Multi-Mode LED Controller Based on FSM
+* Author: Ali Sbeity
+* Version: 1.0
+* Copyright (c) 2026 Ali Sbeity
+* License: MIT License
+********************************/
+
 #include <EEPROM.h>
 
 #define NUM_LEDS 6
@@ -270,3 +278,4 @@ void binaryMode(unsigned long currentMillis) {
     saveState();
   }
 }
+
