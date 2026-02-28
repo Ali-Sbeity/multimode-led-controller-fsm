@@ -279,3 +279,6 @@ void binaryMode(unsigned long currentMillis) {
   }
 }
 
+
+// Copyright (c) 2026 Ali Sbeity  
+// License: MIT License
