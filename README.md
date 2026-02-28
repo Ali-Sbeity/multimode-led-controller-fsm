@@ -128,5 +128,9 @@ void loop() {
 }
 ```
 
+Full source code:
+The complete Arduino sketch for this project is provided below.
+You can view or download the code from the file:
+
 **Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License
