@@ -130,7 +130,7 @@ void loop() {
 
 Full source code:
 The complete Arduino sketch for this project is provided below.
-You can view or download the code from the file:
+You can view or download the code from the file: [led-fsm-controller.ino](
 
 **Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License
