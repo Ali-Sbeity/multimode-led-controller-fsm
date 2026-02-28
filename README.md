@@ -10,7 +10,7 @@ Multi-mode LED controller based on FSM with non-blocking timing, debounce, and E
 
 ## Multi-Mode LED Controller Based on FSM
 
-### Overview
+### Project Overview
 
 This project implements a multi-mode LED controller using Arduino.
 
@@ -21,6 +21,13 @@ The system demonstrates fundamental embedded systems concepts including:
 - Internal pull-up resistors
 - Event-driven button handling
 - EEPROM state persistence
+
+## Demonstration Video
+
+A short demonstration of the system in operation is available here:
+[LinkedIn](
+
+[Youtube](
 
 ## Features
 
@@ -89,9 +96,6 @@ The following parameters are stored:
 - Binary counter
 
 The system resumes from the last state after power cycle.
-
-
-## Demonstration Video
 
 
 ## Learning Objectives
