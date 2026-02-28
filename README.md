@@ -91,23 +91,37 @@ The system resumes from the last state after power cycle.
 ## FSM Diagram
 
 ```mermaid
-flowchart LR
-    OFF --> IDLE
-    IDLE --> SLOW_BLINK
-    SLOW_BLINK --> FAST_BLINK
-    FAST_BLINK --> RUNNING
-    RUNNING --> PING_PONG
-    PING_PONG --> BINARY
-    BINARY --> SLOW_BLINK
+stateDiagram-v2
+    [*] --> OFF
 
-    OFF --> IDLE_Reset[Power ON]
-    IDLE --> OFF_Reset[Power OFF]
-    SLOW_BLINK --> OFF
-    FAST_BLINK --> OFF
-    RUNNING --> OFF
-    PING_PONG --> OFF
-    BINARY --> OFF
+    state ACTIVE {
+        IDLE --> SLOW_BLINK : Mode Button
+        SLOW_BLINK --> FAST_BLINK : Mode Button
+        FAST_BLINK --> RUNNING : Mode Button
+        RUNNING --> PING_PONG : Mode Button
+        PING_PONG --> BINARY : Mode Button
+        BINARY --> SLOW_BLINK : Mode Button
+    }
+
+    OFF --> ACTIVE : Power ON
+    ACTIVE --> OFF : Power OFF
+
+    %% Reset Logic
+    IDLE --> OFF : Both Buttons Pressed
+    SLOW_BLINK --> OFF : Both Buttons Pressed
+    FAST_BLINK --> OFF : Both Buttons Pressed
+    RUNNING --> OFF : Both Buttons Pressed
+    PING_PONG --> OFF : Both Buttons Pressed
+    BINARY --> OFF : Both Buttons Pressed
+
+    %% EEPROM Persistence Note
+    note right of ACTIVE
+        EEPROM updates on state change
+        System resumes last state after power cycle
+    end note
 ```
+
+
 
 ## Learning Objectives
 
