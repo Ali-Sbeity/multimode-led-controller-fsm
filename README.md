@@ -136,7 +136,7 @@ You can view or download the code from the file: [led-fsm-controller.ino](https:
 
 ## Hardware Schematic
 
-The complete circuit schematic, is available here: [schematic](
+The complete circuit schematic, is available here: [led-fsm-schematic](https://github.com/Ali-Sbeity/multimode-led-controller-fsm/blob/main/led-fsm-schematic.png)
 
 **Copyright:** (c) 2026 Ali Sbeity  
 **License:** MIT License
