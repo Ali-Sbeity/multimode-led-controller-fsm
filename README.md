@@ -89,8 +89,9 @@ The system resumes from the last state after power cycle.
 
 
 ## FSM Diagram
-stateDiagram-v2
 
+```mermaid
+stateDiagram-v2
     [*] --> OFF
 
     OFF --> IDLE : Power ON
@@ -112,7 +113,7 @@ stateDiagram-v2
     note right of IDLE
         EEPROM Save on State Change
     end note
-
+```
 
 ## Learning Objectives
 
