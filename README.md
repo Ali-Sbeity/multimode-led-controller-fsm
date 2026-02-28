@@ -91,6 +91,7 @@ The system resumes from the last state after power cycle.
 ## FSM Diagram
 
 ```mermaid
+
 flowchart LR
     %% Power Off / On
     OFF[OFF State] -->|Power ON| IDLE[IDLE]
