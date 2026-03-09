@@ -57,7 +57,7 @@ A short demonstration of the system in operation is available here:
 
 
 For a detailed view of the physical components, refer to the image below.  
-[Hardware Components Overview](
+[Hardware Components Overview](https://github.com/Ali-Sbeity/multimode-led-controller-fsm/blob/main/Hardware%20Components%20Overview.png)
 
 
 
