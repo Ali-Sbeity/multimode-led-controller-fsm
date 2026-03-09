@@ -56,6 +56,11 @@ A short demonstration of the system in operation is available here:
 - Internal pull-up resistors (INPUT_PULLUP)
 
 
+For a detailed view of the physical components, refer to the image below.  
+[Hardware Components Overview](
+
+
+
 ## Pin Configuration
 
 |Function|	 |Pin|
